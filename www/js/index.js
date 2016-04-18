@@ -35,16 +35,32 @@ var app = {
     onDeviceReady: function() {
         var push = PushNotification.init({
             "android": {
-                "senderID": "1234567890"
+                "senderID": "582404099538"
             },
             "ios": {"alert": "true", "badge": "true", "sound": "true"}, 
             "windows": {} 
         });
         
-        push.on('registration', function(data) {
-            console.log("registration event");
-            document.getElementById("regId").innerHTML = data.registrationId;
-            console.log(JSON.stringify(data));
+        push.on('registration', function(mydata) {
+            console.log("\n\nregistration event");
+            document.getElementById("regId").innerHTML = mydata.registrationId;
+            console.log(JSON.stringify(mydata));
+            
+            $.ajax({
+        type: 'GET',
+        data: mydata.registrationId,
+        url: 'https://app.jegyfigyelo.hu/register.php',
+        success: function(data){
+            console.log(data);
+            alert('Registration sent OK GET');
+        },
+        error: function(){
+            console.log(data);
+            alert('There was an error sending the registration');
+        }
+    });           
+            console.log("\nPOST message sent");
+
         });
 
         push.on('notification', function(data) {
