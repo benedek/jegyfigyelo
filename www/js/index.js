@@ -48,7 +48,7 @@ var app = {
             
             $.ajax({
         type: 'GET',
-        data: mydata.registrationId,
+        data: mydata,
         url: 'https://app.jegyfigyelo.hu/register.php',
         success: function(data){
             console.log(data);
