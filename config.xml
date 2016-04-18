@@ -7,6 +7,7 @@
   <preference name="android-minSdkVersion" value="15"/>
   <preference name="android-build-tool" value="gradle"/>
   
+  <!-->
   <plugin name="cordova-plugin-battery-status" source="npm"/>
   <plugin name="cordova-plugin-camera" source="npm"/>
   <plugin name="cordova-plugin-media-capture" source="npm"/>
@@ -20,15 +21,17 @@
   <plugin name="cordova-plugin-file-transfer" source="npm"/>
   <plugin name="cordova-plugin-geolocation" source="npm"/>
   <plugin name="cordova-plugin-globalization" source="npm"/>
-  <plugin name="cordova-plugin-inappbrowser" source="npm"/>
   <plugin name="cordova-plugin-media" source="npm"/>
   <plugin name="cordova-plugin-network-information" source="npm"/>
   <plugin name="cordova-plugin-splashscreen" source="npm"/>
   <plugin name="cordova-plugin-statusbar" source="npm"/>
+  -->
+  
+  <plugin name="cordova-plugin-inappbrowser" source="npm"/>
   <plugin name="cordova-plugin-vibration" source="npm"/>
   <plugin name="cordova-plugin-whitelist" source="npm"/>
   <plugin name="phonegap-plugin-push" source="npm">
-    <param name="SENDER_ID" value="1031377009324" />
+    <param name="SENDER_ID" value="582404099538" />
   </plugin>
   <icon src="icon.png"/>
   <platform name="android">
