@@ -44,7 +44,7 @@ var app = {
             "windows": {} 
         });
         
-        alert("push created"+push)
+        alert("push created"+push);
         push.on('registration', function(mydata) {
             alert("registration");
             console.log("\n\nregistration event");
