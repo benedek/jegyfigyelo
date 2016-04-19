@@ -43,7 +43,7 @@ var app = {
         
         push.on('registration', function(mydata) {
             console.log("\n\nregistration event");
-            document.getElementById("regId").innerHTML = mydata.registrationId;
+            document.getElementById("regId").innerHTML = "ezitt: "+mydata.registrationId;
             console.log(JSON.stringify(mydata));
 
             document.getElementById("logMsg").innerHTML = "Sending...";
