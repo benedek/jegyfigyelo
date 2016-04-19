@@ -56,7 +56,7 @@ var app = {
 //            console.log(data);
             console.log("Registration sent OK GET");
             document.getElementById("logMsg").innerHTML = "Registration sent OK GET";
-            document.getElementById("regId").innerHTML = "Registration sent OK GET";
+           
             
         },
         error: function(jqXHR, textStatus, error){
