@@ -87,6 +87,8 @@
     <icon src="www/res/icon/wp8/Background.png" platform="wp8" width="159" height="159"/>
     <splash src="www/res/screen/wp8/screen-portrait.jpg" platform="wp8" width="768" height="1280"/>
   </platform>
+  
+<!-->
   <platform name="windows">
     <icon src="www/res/icon/windows/Square150x150Logo.scale-100.png" platform="windows" width="150" height="150"/>
     <icon src="www/res/icon/windows/Square30x30Logo.scale-100.png" platform="windows" width="30" height="30"/>
@@ -104,6 +106,8 @@
     <icon src="www/res/icon/windows/Wide310x150Logo.scale-240.png" platform="windows" width="744" height="360"/>
     <splash src="www/res/screen/windows/SplashScreenPhone.scale-240.png" platform="windows" width="1152" height="1920"/>
   </platform>
+-->
+  
   <access origin="*"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
