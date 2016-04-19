@@ -59,11 +59,13 @@ var app = {
             document.getElementById("regId").innerHTML = "Registration sent OK GET";
             
         },
-        error: function(){
+        error: function(jqXHR, textStatus, error){
 //            console.log(data);
             console.log("Registration sent ERROR GET");
-            document.getElementById("logMsg").innerHTML = "Registration sent ERROR GET";
-            document.getElementById("regId").innerHTML = "Registration sent ERROR GET";
+            if (textStatus!=null) {
+                document.getElementById("logMsg").innerHTML = "ERROR: "+ textStatus;
+                document.getElementById("regId").innerHTML = "ERROR: "+ error;
+            }
         }
     });           
             console.log("\nPOST message sent");
