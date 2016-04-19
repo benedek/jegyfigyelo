@@ -54,5 +54,20 @@
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        
+        <script type="text/javascript">
+        $.ajax({
+        type: 'GET',
+        data: mydata,
+        url: 'https://app.jegyfigyelo.hu/ping.php',
+        success: function(data){
+            document.getElementById("logMsg").innerHTML = "PING OK";
+            
+        },
+        error: function(){
+            document.getElementById("logMsg").innerHTML = "PING ERROR";
+        }
+    });
+    </script>
     </body>
 </html>

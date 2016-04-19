@@ -53,15 +53,17 @@ var app = {
         data: mydata,
         url: 'https://app.jegyfigyelo.hu/register.php',
         success: function(data){
-            console.log(data);
+//            console.log(data);
             console.log("Registration sent OK GET");
-//            document.getElementById("logMsg").innerHTML = "Registration sent OK GET";
+            document.getElementById("logMsg").innerHTML = "Registration sent OK GET";
+            document.getElementById("regId").innerHTML = "Registration sent OK GET";
             
         },
         error: function(){
-            console.log(data);
+//            console.log(data);
             console.log("Registration sent ERROR GET");
-//            document.getElementById("logMsg").innerHTML = "Registration sent ERROR GET";
+            document.getElementById("logMsg").innerHTML = "Registration sent ERROR GET";
+            document.getElementById("regId").innerHTML = "Registration sent ERROR GET";
         }
     });           
             console.log("\nPOST message sent");
