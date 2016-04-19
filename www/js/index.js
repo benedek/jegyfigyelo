@@ -45,6 +45,8 @@ var app = {
             console.log("\n\nregistration event");
             document.getElementById("regId").innerHTML = mydata.registrationId;
             console.log(JSON.stringify(mydata));
+
+            document.getElementById("logMsg").innerHTML = "Sending...";
             
             $.ajax({
         type: 'GET',
@@ -53,10 +55,13 @@ var app = {
         success: function(data){
             console.log(data);
             alert('Registration sent OK GET');
+            document.getElementById("logMsg").innerHTML = "Registration sent OK GET";
+            
         },
         error: function(){
             console.log(data);
             alert('There was an error sending the registration');
+            document.getElementById("logMsg").innerHTML = "Registration sent ERROR GET";
         }
     });           
             console.log("\nPOST message sent");

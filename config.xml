@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="1.0.1">
   <name>Jegyfigyelo Push Notification</name>
   <description>Display Push Notification, then fetch for new info, visit pages, start shopping</description>
   <author href="https://www.facebook.com/jegyfigyelo" email="support@jegyfigyelo.hu">Jegyfigyelő Team</author>
