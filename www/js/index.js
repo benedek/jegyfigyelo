@@ -46,7 +46,7 @@ var app = {
             document.getElementById("regId").innerHTML = "ezitt: "+mydata.registrationId;
             console.log(JSON.stringify(mydata));
 
-            document.getElementById("logMsg").innerHTML = "Sending...";
+//            document.getElementById("logMsg").innerHTML = "Sending...";
             
             $.ajax({
         type: 'GET',
@@ -54,14 +54,14 @@ var app = {
         url: 'https://app.jegyfigyelo.hu/register.php',
         success: function(data){
             console.log(data);
-            alert('Registration sent OK GET');
-            document.getElementById("logMsg").innerHTML = "Registration sent OK GET";
+            console.log("Registration sent OK GET");
+//            document.getElementById("logMsg").innerHTML = "Registration sent OK GET";
             
         },
         error: function(){
             console.log(data);
-            alert('There was an error sending the registration');
-            document.getElementById("logMsg").innerHTML = "Registration sent ERROR GET";
+            console.log("Registration sent ERROR GET");
+//            document.getElementById("logMsg").innerHTML = "Registration sent ERROR GET";
         }
     });           
             console.log("\nPOST message sent");
