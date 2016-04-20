@@ -11,7 +11,6 @@
   <plugin name="cordova-plugin-battery-status" source="npm"/>
   <plugin name="cordova-plugin-camera" source="npm"/>
   <plugin name="cordova-plugin-media-capture" source="npm"/>
-  <plugin name="cordova-plugin-console" source="npm"/>
   <plugin name="cordova-plugin-contacts" source="npm"/>
   <plugin name="cordova-plugin-device" source="npm"/>
   <plugin name="cordova-plugin-device-motion" source="npm"/>
@@ -28,12 +27,16 @@
   <plugin name="cordova-plugin-inappbrowser" source="npm"/>
   -->
   
+  <plugin name="cordova-plugin-console" source="npm"/>
+
   <plugin name="cordova-plugin-network-information" source="npm"/>
   <plugin name="cordova-plugin-vibration" source="npm"/>
   <plugin name="cordova-plugin-whitelist" source="npm"/>
   <plugin name="phonegap-plugin-push" source="npm">
     <param name="SENDER_ID" value="582404099538" />
   </plugin>
+  <plugin name="cordova-plugin-inappbrowser" source="git" spec="https://github.com/apache/cordova-plugin-inappbrowser.git" />
+  
   <icon src="icon.png"/>
   <platform name="android">
     <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi"/>
