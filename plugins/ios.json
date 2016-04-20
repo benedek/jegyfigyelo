@@ -18,6 +18,10 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.skawa.jegyfigyelo"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "582404099538",
+            "PACKAGE_NAME": "com.skawa.jegyfigyelo"
         }
     },
     "dependent_plugins": {}
