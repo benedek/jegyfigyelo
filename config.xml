@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.skawa.jegyfigyelo" version="1.0.9">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.skawa.jegyfigyelo" version="1.0.10">
   <name>4 Jegyfigyelo Push Notification</name>
   <description>Display Push Notification, then fetch for new info, visit pages, start shopping</description>
   <author href="https://www.facebook.com/jegyfigyelo" email="support@jegyfigyelo.hu">Jegyfigyelő Team</author>
@@ -24,7 +24,7 @@
   <plugin name="cordova-plugin-network-information" source="npm"/>
   <plugin name="cordova-plugin-splashscreen" source="npm"/>
   <plugin name="cordova-plugin-statusbar" source="npm"/>
-  <plugin name="cordova-plugin-inappbrowser" source="npm"/>
+  
   <plugin name="cordova-plugin-inappbrowser" source="git" spec="https://github.com/apache/cordova-plugin-inappbrowser.git" />
   
   -->
@@ -34,9 +34,13 @@
   <plugin name="cordova-plugin-network-information" source="npm"/>
   <plugin name="cordova-plugin-vibration" source="npm"/>
   <plugin name="cordova-plugin-whitelist" source="npm"/>
+  <plugin name="cordova-plugin-inappbrowser" source="npm"/>
+  
+  <!-->
   <plugin name="phonegap-plugin-push" source="npm">
     <param name="SENDER_ID" value="582404099538" />
   </plugin>
+  -->
   
   <icon src="icon.png"/>
   <platform name="android">
