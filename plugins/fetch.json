@@ -9,14 +9,6 @@
             "SENDER_ID": "582404099538"
         }
     },
-    "cordova-plugin-inappbrowser": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-inappbrowser"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-vibration": {
         "source": {
             "type": "registry",
