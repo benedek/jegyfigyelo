@@ -20,7 +20,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         alert("app.initialize");
-//        this.bindEvents();
+        this.bindEvents();
     },
     // Bind Event Listeners
     //
@@ -49,8 +49,7 @@ var app = {
             console.log("\n\nregistration event");
             document.getElementById("regId").innerHTML = "ezitt: "+mydata.registrationId;
             console.log(JSON.stringify(mydata));
-
-//            document.getElementById("logMsg").innerHTML = "Sending...";
+            document.getElementById("logMsg").innerHTML = "Sending...";
             
             $.ajax({
         type: 'GET',
