@@ -51,11 +51,13 @@ var app = {
         
         console.log("\n\npush created");
         
+/*        
         push.unregister(function() {
             console.log('unregister success');
         }, function() {
             console.log('unregister error');
         });
+*/
         
         push.on('registration', function(mydata) {
             console.log("\n\nregistration event");
