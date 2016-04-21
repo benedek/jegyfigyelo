@@ -40,11 +40,22 @@ var app = {
             "android": {
                 "senderID": "582404099538"
             },
-            "ios": {"alert": "true", "badge": "true", "sound": "true"}, 
+            "ios": {"alert": "true", "badge": "true", "sound": "true",
+                            "senderID":"582404099538",
+                "gcmSandbox":"true" 
+            }, 
             "windows": {} 
         });
         
+        
+        
         console.log("\n\npush created");
+        
+        push.unregister(function() {
+            console.log('unregister success');
+        }, function() {
+            console.log('unregister error');
+        });
         
         push.on('registration', function(mydata) {
             console.log("\n\nregistration event");
@@ -103,4 +114,5 @@ var app = {
     }
 };
 
-app.initialize();
+window.setTimeout(app.initialize(), 3000);
+
