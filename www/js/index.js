@@ -114,5 +114,5 @@ var app = {
     }
 };
 
-window.setTimeout(app.initialize(), 3000);
+app.initialize();
 
