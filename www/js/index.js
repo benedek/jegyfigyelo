@@ -35,7 +35,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         console.log("\n\nonDeviceReady");
-    
+        document.getElementById("logMsg").innerHTML = "onDeviceReady";
+
         var push = PushNotification.init({
             "android": {
                 "senderID": "582404099538"
@@ -50,6 +51,7 @@ var app = {
         
         
         console.log("\n\npush created");
+        document.getElementById("logMsg").innerHTML = "push created";
         
 /*        
         push.unregister(function() {
