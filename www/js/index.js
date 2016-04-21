@@ -19,7 +19,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
-        alert("app.initialize");
+        console.log("\n\napp.initialize");
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -34,9 +34,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        alert("onDeviceReady");
-        
-        return;
+        console.log("\n\nonDeviceReady");
     
         var push = PushNotification.init({
             "android": {
@@ -46,9 +44,9 @@ var app = {
             "windows": {} 
         });
         
-        alert("push created"+push);
+        console.log("\n\npush created");
+        
         push.on('registration', function(mydata) {
-            alert("registration");
             console.log("\n\nregistration event");
             document.getElementById("regId").innerHTML = "ezitt: "+mydata.registrationId;
             console.log(JSON.stringify(mydata));
