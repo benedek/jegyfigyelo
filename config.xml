@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.skawa.jegyfigyelo" version="1.0.20" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-  <name>4 Jegyfigyelo Push Notification</name>
+<widget id="com.skawa.jegyfigyelo" version="1.0.21" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+  <name>1 Jegyfigyelo</name>
   <description>Display Push Notification, then fetch for new info, visit pages, start shopping</description>
   <author email="support@jegyfigyelo.hu" href="https://www.facebook.com/jegyfigyelo">Jegyfigyelő Team</author>
   <content src="index.html" />
